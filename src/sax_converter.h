@@ -53,7 +53,7 @@ public:
 		step_size = _step_size;
 		numerosity_reduction = nr_strategy;
 		MAX = 10000;
-		initialize_break_points();
+		initialize_break_points(); // create an array with breakpoints
 
 		if (window_size % word_length == 0){
 			divisible = true;
