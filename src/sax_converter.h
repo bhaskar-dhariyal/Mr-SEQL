@@ -27,7 +27,7 @@ class SAX
 {
 private:
 
-	double *break_points;
+	double *break_points; // Based on Normal distribution
 	bool divisible;
 
 
@@ -35,10 +35,10 @@ private:
 	int numerosity_reduction;
 
 public:
-	int window_size;
-	int step_size;
-	int word_length;
-	int alphabet_size;
+	int window_size; // Size of window
+	int step_size; // move window
+	int word_length; // 16 the total string size 
+	int alphabet_size; // 4 {a,b,c,d}
 	// numerosity reduction strategy
 	static const int NONE_NR = 0;
 	static const int BACK2BACK_NR = 1;
